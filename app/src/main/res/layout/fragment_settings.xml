@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+	
+	<TextView
+			android:textSize="@dimen/medium_text"
+			android:textStyle="bold"
+			android:layout_gravity="start"
+			android:layout_width="wrap_content"
+			android:textColor="@color/black"
+			android:padding="@dimen/common_padding_ten"
+			android:layout_height="wrap_content"
+			android:text="@string/label_reading_preference"/>
+	
+	
+	<LinearLayout
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:padding="@dimen/common_padding_ten"
+			android:layout_height="wrap_content">
+		
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content">
+			
+			<TextView
+					android:textSize="@dimen/semi_medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/black"
+					android:layout_height="wrap_content"
+					android:text="@string/label_keep_screen_on"/>
+			<TextView
+					android:textSize="@dimen/medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/SlateGray"
+					android:layout_height="wrap_content"
+					android:text="@string/label_keeps_the_screen_awake"/>
+		
+		</LinearLayout>
+		
+		<androidx.appcompat.widget.AppCompatCheckBox
+				android:id="@+id/cbScreenOn"
+				android:layout_gravity="end"
+				android:gravity="end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+	
+	<View android:layout_width="match_parent"
+	      android:layout_marginTop="@dimen/common_padding_five"
+	      android:layout_height="1dp"
+	      android:background="@color/DarkGray"/>
+	
+	
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:padding="@dimen/common_padding_ten"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content">
+		
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content">
+			
+			<TextView
+					android:textSize="@dimen/semi_medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/black"
+					android:layout_height="wrap_content"
+					android:text="@string/label_full_screen"/>
+			<TextView
+					android:textSize="@dimen/medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/SlateGray"
+					android:layout_height="wrap_content"
+					android:text="@string/label_enable_full_screen"/>
+		
+		</LinearLayout>
+		
+		<androidx.appcompat.widget.AppCompatCheckBox
+				android:id="@+id/cbFullScreen"
+				android:layout_gravity="end"
+				android:gravity="end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+	
+	<TextView
+			android:textSize="@dimen/medium_text"
+			android:textStyle="bold"
+			android:layout_gravity="start"
+			android:layout_width="wrap_content"
+			android:textColor="@color/black"
+			android:padding="@dimen/common_padding_ten"
+			android:layout_height="wrap_content"
+			android:text="@string/label_navigation_preferences"/>
+	
+	
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:gravity="center_vertical"
+			android:padding="@dimen/common_padding_ten"
+			android:layout_height="wrap_content">
+		
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content">
+			
+			<TextView
+					android:textSize="@dimen/semi_medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/black"
+					android:layout_height="wrap_content"
+					android:text="@string/label_back_button_behaviour"/>
+			<TextView
+					android:textSize="@dimen/medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/SlateGray"
+					android:layout_height="wrap_content"
+					android:text="@string/label_show_booklist_when_back_button_is_touched"/>
+		
+		</LinearLayout>
+		
+		<androidx.appcompat.widget.AppCompatCheckBox
+				android:id="@+id/cbBackButton"
+				android:layout_gravity="end"
+				android:gravity="end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+	
+	<View android:layout_width="match_parent"
+	      android:layout_marginTop="@dimen/common_padding_five"
+	      android:layout_height="1dp"
+	      android:background="@color/DarkGray"/>
+	
+	
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:padding="@dimen/common_padding_ten"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content">
+		
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content">
+			
+			<TextView
+					android:textSize="@dimen/semi_medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/black"
+					android:layout_height="wrap_content"
+					android:text="@string/label_hide_navigation_strip"/>
+			<TextView
+					android:textSize="@dimen/medium_text"
+					android:layout_gravity="start"
+					android:layout_width="match_parent"
+					android:textColor="@color/SlateGray"
+					android:layout_height="wrap_content"
+					android:text="@string/label_hide_navigation_strip_located_at_bottom_of_the_screen"/>
+		
+		</LinearLayout>
+		
+		<androidx.appcompat.widget.AppCompatCheckBox
+				android:id="@+id/cbHideNavigation"
+				android:layout_gravity="end"
+				android:gravity="end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+	
+	<View android:layout_width="match_parent"
+	      android:layout_marginTop="@dimen/common_padding_five"
+	      android:layout_height="1dp"
+	      android:background="@color/DarkGray"/>
+</LinearLayout>

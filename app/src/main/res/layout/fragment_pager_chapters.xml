@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context=".ui.chapter.ChaptersFragment">
+	
+	<androidx.viewpager.widget.ViewPager
+			android:id="@+id/chaptersPager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+	
+	</androidx.viewpager.widget.ViewPager>
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginRight="@dimen/common_padding_ten"
+			android:layout_marginBottom="@dimen/common_padding_twenty_five"
+			android:src="@drawable/ic_zoom_white" />
+	
+	<LinearLayout
+			android:id="@+id/layoutIntro"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/TransBlack"
+			android:orientation="vertical"
+			android:padding="20dp"
+			android:visibility="gone">
+		
+		<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:scaleType="fitCenter"
+				android:src="@drawable/onboard" />
+		
+		<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:scaleType="fitCenter"
+				android:src="@drawable/long_press" />
+	</LinearLayout>
+</RelativeLayout>

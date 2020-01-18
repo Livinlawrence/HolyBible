@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/search_nav_graph"
+		app:startDestination="@id/searchListFragment">
+	
+	
+	<fragment
+			android:id="@+id/searchListFragment"
+			android:name="ajl.com.bible.ui.searchhistory.ui.searchlist.SearchListFragment"
+			android:label="SearchListFragment">
+		<argument
+				android:name="searchHistory"
+				app:argType="ajl.com.domain.entities.SearchHistoryDisplayEntity" />
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+	</fragment>
+	
+	<fragment
+			android:id="@+id/navigation_pager_chapters"
+			android:name="ajl.com.bible.ui.chapter.ChaptersPagerFragment"
+			android:label="fragment_pager_chapters"
+			tools:layout="@layout/fragment_pager_chapters">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<argument
+				android:name="book"
+				app:argType="ajl.com.domain.entities.BookDisplayEntity" />
+		
+		<argument
+				android:name="selectedChapter"
+				android:defaultValue="0"
+				app:argType="integer" />
+		
+		<argument
+				android:name="selectedVerse"
+				android:defaultValue="0"
+				app:argType="integer" />
+	</fragment>
+
+
+</navigation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="@dimen/common_padding_twenty">
+	
+	<TextView
+			android:id="@+id/title_wrote"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="start"
+			android:padding="@dimen/common_padding_five"
+			android:text="@string/label_about_holy_bible"
+			android:textColor="@color/colorPrimary"
+			android:textSize="@dimen/large_text"
+			android:textStyle="bold" />
+	
+	
+	<TextView
+			android:id="@+id/idLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/title_wrote"
+			android:layout_alignParentStart="true"
+			android:layout_gravity="start"
+			android:padding="@dimen/common_padding_five"
+			android:text="@string/text_about"
+			android:textColor="@color/black"
+			android:textSize="@dimen/medium_text" />
+	
+	<TextView
+			android:id="@+id/feedbackButton"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/idLabel"
+			android:layout_alignParentEnd="true"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/common_padding_ten"
+			android:background="@color/WhiteSmoke"
+			android:padding="@dimen/common_padding_ten"
+			android:text="@string/label_feedback"
+			android:textColor="@color/colorPrimary"
+			android:textStyle="bold" />
+</RelativeLayout>

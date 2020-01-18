@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/navigation_book">
+	
+	<fragment android:id="@+id/navigation_book"
+	          android:name="ajl.com.bible.ui.book.BooksFragment"
+	          android:label="fragment_books"
+	          tools:layout="@layout/fragment_books">
+		<action
+				android:id="@+id/action_book_to_chapters"
+				app:destination="@id/navigation_chapters"/>
+		
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+	
+	
+	</fragment>
+	
+	
+	<fragment android:id="@+id/navigation_chapters"
+	          android:name="ajl.com.bible.ui.chapter.ChaptersFragment"
+	          android:label="fragment_chapters"
+	          tools:layout="@layout/fragment_chapters">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters"/>
+		<argument
+				android:name="book"
+				app:argType="ajl.com.domain.entities.BookDisplayEntity" />
+	</fragment>
+	
+	
+	<fragment android:id="@+id/navigation_pager_chapters"
+	          android:name="ajl.com.bible.ui.chapter.ChaptersPagerFragment"
+	          android:label="fragment_pager_chapters"
+	          tools:layout="@layout/fragment_pager_chapters">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		
+		<argument
+				android:name="book"
+				app:argType="ajl.com.domain.entities.BookDisplayEntity" />
+		
+		<argument
+				android:name="selectedChapter"
+				app:argType="integer"
+				android:defaultValue="0"/>
+		
+		<argument
+				android:name="selectedVerse"
+				android:defaultValue="0"
+				app:argType="integer" />
+	</fragment>
+	
+	
+	<fragment android:id="@+id/fragmentVerse"
+	          android:name="ajl.com.bible.ui.verse.VerseFragment"
+	          android:label="fragment_verse"
+	          tools:layout="@layout/fragment_verse">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<argument
+				android:name="chapter"
+				app:argType="ajl.com.domain.entities.ChapterDisplayEntity"/>
+		<argument
+				android:name="selectedVerse"
+				app:argType="integer"
+				android:defaultValue="0"/>
+	</fragment>
+	
+	
+	<fragment android:id="@+id/navigation_bookmark_folder_list"
+	          android:name="ajl.com.bible.ui.bookmark.BookmarkFoldersFragment"
+	          android:label="fragment_bookmarks_folder_list"
+	          tools:layout="@layout/fragment_bookmarks">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<action
+				android:id="@+id/action_bookmark_folder_to_bookmark_item"
+				app:destination="@id/navigation_bookmarks"/>
+	
+	
+	</fragment>
+	
+	
+	<fragment android:id="@+id/navigation_bookmarks"
+	          android:name="ajl.com.bible.ui.bookmark.BookmarkListFragment"
+	          android:label="fragment_bookmarks"
+	          tools:layout="@layout/fragment_bookmarks">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<action
+				android:id="@+id/action_chapter_to_verse"
+				app:destination="@id/fragmentVerse"/>
+		
+		<argument
+				android:name="bookmarkFolderName"
+				app:argType="ajl.com.domain.entities.BookmarkFolderDisplayEntity" />
+	
+	</fragment>
+	
+	
+	<fragment android:id="@+id/navigation_foot_notes"
+	          android:name="ajl.com.bible.ui.footnote.FootNoteFragment"
+	          android:label="fragment_foot_note"
+			tools:layout="@layout/fragment_foot_note">
+		
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+	
+	</fragment>
+	
+	<fragment android:id="@+id/aboutDialogFragment"
+	          android:name="ajl.com.bible.ui.home.AboutDialogFragment"
+	          android:label="AboutDialogFragment"/>
+	
+	<fragment android:id="@+id/noteFoldersFragment"
+	          android:name="ajl.com.bible.ui.note.NoteFoldersListFragment"
+	          android:label="fragment_notes">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<action
+				android:id="@+id/action_note_folder_to_notes"
+				app:destination="@id/noteFragment"/>
+	</fragment>
+	
+	
+	<fragment android:id="@+id/noteFragment"
+	          android:name="ajl.com.bible.ui.note.NotesListFragment"
+	          android:label="fragment_notes">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+		
+		<action
+				android:id="@+id/action_note_to_verse"
+				app:destination="@id/fragmentVerse"/>
+		<argument
+				android:name="noteFolderName"
+				app:argType="ajl.com.domain.entities.NoteFolderDisplayEntity" />
+	</fragment>
+	
+	
+	<fragment android:id="@+id/settingsDialogFragment"
+	          android:name="ajl.com.bible.ui.settings.SettingsFragment"
+	          android:label="SettingsDialogFragment"/>
+	
+	<fragment
+			android:id="@+id/searchHistoryListFragment"
+			android:name="ajl.com.bible.ui.searchhistory.SearchHistoryListFragment"
+			android:label="SearchHistoryListFragment">
+		
+		<action
+				android:id="@+id/action_chapter_to_pager"
+				app:destination="@id/navigation_pager_chapters" />
+	</fragment>
+
+</navigation>

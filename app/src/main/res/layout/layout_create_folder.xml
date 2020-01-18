@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="@dimen/common_padding_ten"
+              android:layout_height="match_parent">
+	
+	
+	<TextView
+			android:textStyle="italic"
+			android:id="@+id/tvHeading"
+			android:textSize="@dimen/semi_medium_text"
+			android:text="@string/font_size_12_sp"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/black"
+			android:gravity="start"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	
+	
+	<EditText
+			android:id="@+id/etFolderName"
+			android:textSize="@dimen/semi_medium_text"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/black"
+			android:layout_marginTop="@dimen/common_padding_five"
+			android:padding="@dimen/common_padding_ten"
+			android:gravity="start"
+			android:inputType="textMultiLine|textCapSentences"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	
+	
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_gravity="end"
+			android:visibility="gone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		
+		<TextView android:layout_width="wrap_content"
+		          android:text="@string/cancel"
+		          android:textColor="@color/DarkRed"
+		          android:textAllCaps="true"
+		          android:textStyle="bold"
+		          android:layout_marginEnd="@dimen/common_padding_ten"
+		          android:padding="@dimen/common_padding_ten"
+		          android:layout_height="wrap_content"/>
+		
+		<TextView android:layout_width="wrap_content"
+		          android:text="@string/label_save"
+		          android:textAllCaps="true"
+		          android:textStyle="bold"
+		          android:textColor="@color/CornflowerBlue"
+		          android:layout_marginStart="@dimen/common_padding_ten"
+		          android:layout_marginEnd="@dimen/common_padding_ten"
+		          android:padding="@dimen/common_padding_ten"
+		          android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+
+</LinearLayout>

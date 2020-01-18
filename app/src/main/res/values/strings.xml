@@ -1,0 +1,91 @@
+<resources>
+	<string name="app_name">Holy Bible(Malayalam)</string>
+	<string name="title_activity_home">HomeActivity</string>
+	<string name="title_home">Home</string>
+	<string name="title_dashboard">Dashboard</string>
+	<string name="title_notifications">Notifications</string>
+	<string name="label_holy_bible">Holy Bible</string>
+	<string name="label_bookmarks">Bookmarks</string>
+	<string name="label_notes">Notes</string>
+	<string name="label_settings">Settings</string>
+	<string name="label_communicate">Communicate</string>
+	<string name="label_share">Share</string>
+	<string name="label_about">About</string>
+	<string name="label_rate">Rate</string>
+	<string name="navigation_drawer_open">Open drawer</string>
+	<string name="navigation_drawer_close">Close drawer</string>
+	<string name="label_books">Books</string>
+	<string name="label_chapters">Chapters</string>
+	<string name="label_verses">Verses</string>
+	
+	
+	<string name="label_foot_note">Footnotes</string>
+	<string name="label_search_anything">Search anything here</string>
+	
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	
+	
+	<string name="label_adyayam">അദ്ധ്യായങ്ങൾ</string>
+	<string name="label_vakyangal">വാക്യങ്ങൾ</string>
+	<string name="label_new_testament">പുതിയ നിയമം</string>
+	<string name="label_old_testament">പഴയ നിയമം</string>
+	
+	<string name="label_bookmark">Bookmark</string>
+	<string name="label_use_google_malayalam_handwriting_google_indic_keyboard_for_better_search_results">Use Google
+		malayalam Handwriting/Google Indic keyboard for better search results
+	</string>
+	<string name="label_install_malayalam_keyboard">Install Malayalam Keyboard</string>
+	<string name="label_content_copied">Content copied</string>
+	<string name="label_copy">Copy</string>
+	<string name="app_share_text">Holy Bible - താഴെ കാണുന്ന link ൽ നിന്നും ബൈബിള്‍ ഡൗൺലോഡ് ചെയ്യാവുന്നതാണ്.
+		https://play.google.com/store/apps/details?id=ajl.com.bible
+		മുറുള്ളവർക്കു കൂടി പ്രയോജനപ്പെടുന്നതിന്നായി ഈ മെസേജ് ഷെയർ ചെയ്യാൻ മറക്കല്ലേ.
+	</string>
+	<string name="label_about_holy_bible">About Holy Bible</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+	<string name="label_set_font_size">Set font size</string>
+	<string name="font_size_12_sp">font size 12 sp</string>
+	<string name="drawer_open">Drawer open</string>
+	<string name="drawer_close">Drawer Close</string>
+	<string name="label_select">Select</string>
+	<string name="label_save">Save</string>
+	<string name="label_add_note">Add Note</string>
+	<string name="label_reading_preference">Reading Preference</string>
+	<string name="label_keep_screen_on">Keep Screen on</string>
+	<string name="label_keeps_the_screen_awake">Keeps the screen awake</string>
+	<string name="label_fix_font_rendering_issue">Fix Font rendering issue</string>
+	<string name="label_full_screen">Full Screen</string>
+	<string name="label_enable_full_screen">Enable full screen</string>
+	<string name="label_navigation_preferences">Navigation Preferences</string>
+	<string name="label_back_button_behaviour">Back button behaviour</string>
+	<string name="label_show_booklist_when_back_button_is_touched">Show BookList when back button is touched</string>
+	<string name="label_hide_navigation_strip">Hide Navigation Strip</string>
+	<string name="label_hide_navigation_strip_located_at_bottom_of_the_screen">Hide Navigation strip located at Bottom
+		of the screen
+	</string>
+	<string name="label_fote_notes">Footnotes</string>
+	<string name="label_sort">Sort</string>
+	<string name="label_select_bookmark_folder">Select Bookmark Folder</string>
+	<string name="label_create_folder">Create Folder</string>
+	<string name="label_select_note_folder">Select note folder</string>
+	<string name="filter">Filter</string>
+	<string name="label_filter_folders">Filter folders</string>
+	<string name="label_filter_note_folder">Filter note folder</string>
+	<string name="label_bookmark_folders">Bookmark Folders</string>
+	<string name="label_note_folders">Note Folders</string>
+	<string name="label_select_the_favorites_color">Select the favorites color</string>
+	<string name="label_favourite">Favourite</string>
+	<string name="label_search_history">Search History</string>
+	<string name="message_pls_grant_all_permissions">Please grant storage permissions to download search file</string>
+	<string name="label_search_history_saved">Search History has been saved to a text file in your sdcard.</string>
+	<string name="label_search_details">Search Details</string>
+	<string name="text_about">Holy Bible Malayalam is an Application simply designed to make bible available OFFLINE complete.The internet connection is not required to read the bible verses. This app contains both old testament and new testament as per the KCBC translation.</string>
+	<string name="label_feedback">Feedback</string>
+	<string name="message_pls_select_an_verse">Please select an verse</string>
+	<string name="message_verse_copied">Verse copied</string>
+	<string name="message_no_results_found">No results found</string>
+
+
+</resources>

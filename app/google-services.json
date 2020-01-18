@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054113314805",
+    "firebase_url": "https://biblebot-chrkig.firebaseio.com",
+    "project_id": "biblebot-chrkig",
+    "storage_bucket": "biblebot-chrkig.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054113314805:android:0c83971adc67531c0792bc",
+        "android_client_info": {
+          "package_name": "ajl.com.bible"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054113314805-j7vqog3aoa4lt58pvv2o4hah1fhj3o1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ajl.com.bible",
+            "certificate_hash": "25b3e913428d52eed829bdfb7260edb0d4f4a8e9"
+          }
+        },
+        {
+          "client_id": "1054113314805-2aqnfu60lcj5e79rgvqi3rshuqaht29m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_XybX7gc0SRe-lwGGQmEWMO8NoaU6AJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054113314805-2aqnfu60lcj5e79rgvqi3rshuqaht29m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

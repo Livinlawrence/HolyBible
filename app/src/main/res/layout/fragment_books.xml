@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/LightGrey"
+                tools:context=".ui.book.BooksFragment">
+	
+	<androidx.core.widget.NestedScrollView
+			android:overScrollMode="never"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		
+		<LinearLayout android:layout_width="match_parent"
+		              android:orientation="vertical"
+		              android:layout_height="match_parent">
+			
+			<TextView
+					android:textSize="@dimen/large_text"
+					android:textStyle="bold"
+					android:layout_gravity="center_horizontal"
+					android:padding="@dimen/common_padding_five"
+					android:textColor="@color/white"
+					android:background="@color/colorPrimary"
+					android:gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/label_old_testament"/>
+			
+			<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerOldBooks"
+					android:layout_width="match_parent"
+					android:minHeight="300dp"
+					android:nestedScrollingEnabled="false"
+					android:layout_height="wrap_content"/>
+			
+			
+			<TextView
+					android:textSize="@dimen/large_text"
+					android:textStyle="bold"
+					android:layout_gravity="center_horizontal"
+					android:padding="@dimen/common_padding_five"
+					android:textColor="@color/white"
+					android:background="@color/colorPrimary"
+					android:gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/label_new_testament"/>
+			<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerNewBooks"
+					android:layout_width="match_parent"
+					android:nestedScrollingEnabled="false"
+					android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+	
+	<RelativeLayout
+			android:background="@color/TransWhite"
+			android:id="@+id/progressLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		<ProgressBar
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	</RelativeLayout>
+
+</RelativeLayout>
